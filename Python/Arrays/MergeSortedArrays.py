@@ -13,7 +13,7 @@ class Solution:
             else: 
                 nums1[last] = nums2[n -1]
                 n -= 1
-            last -= 1
+            last -= 1 #updating the position being filled
         
         # filling num1 with leftover num2 elements
         while n > 0:
