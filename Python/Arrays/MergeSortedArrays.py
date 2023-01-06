@@ -6,7 +6,7 @@ class Solution:
         # n - 1 = this will be the last of n
         
         # merge in reverse order
-        while m > 0 and n > 0: #m and n are ptrs
+        while m > 0 and n > 0: #m and n are ptrs, any one becoming zeroes will exit, leftover may exist in nums2
             if nums1[m - 1] > nums2[n - 1]:
                 nums1[last] = nums1[m - 1]
                 m -= 1 #decrementing as merging in reverse
