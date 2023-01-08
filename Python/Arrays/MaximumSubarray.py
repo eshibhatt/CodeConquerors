@@ -14,7 +14,7 @@ class Solution:
         
         curr=nums[0]
         maxtill=nums[0]
-        for i in range(1,len(nums)):
+        for i in range(1,len(nums)): #we iterate from 1 as we initialised it at 0
             if curr<0:
                 curr=0
             curr+=nums[i]

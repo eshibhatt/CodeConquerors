@@ -17,5 +17,6 @@ class Solution:
         
         # filling num1 with leftover num2 elements
         while n > 0:
-            nums1[last] = nums2[n - 1]
-            n, last = n -1, last - 1  
+            nums1[last]=nums2[n - 1] #replacing the leftover values where they belong in nums1
+            n-=1
+            last-= 1  
